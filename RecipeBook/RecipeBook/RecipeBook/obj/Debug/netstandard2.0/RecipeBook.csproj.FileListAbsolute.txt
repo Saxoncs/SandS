@@ -1,0 +1,13 @@
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\bin\Debug\netstandard2.0\RecipeBook.deps.json
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\bin\Debug\netstandard2.0\RecipeBook.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\bin\Debug\netstandard2.0\RecipeBook.pdb
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeBook.csprojAssemblyReference.cache
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeBook.csproj.CoreCompileInputs.cache
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeBook.AssemblyInfoInputs.cache
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeBook.AssemblyInfo.cs
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\XamlC.stamp
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeBook.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeBook.pdb
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeList.xaml.g.cs
