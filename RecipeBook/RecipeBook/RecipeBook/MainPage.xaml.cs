@@ -14,9 +14,24 @@ namespace RecipeBook
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void RecipeList_Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RecipeList());
+        }
+
+        private async void ShoppingList_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ShoppingList());
+        }
+
+        private async void NewRecipe_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NewRecipe());
+        }
+
+        private async void IngredientList_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new IngredientList());
         }
     }
 }

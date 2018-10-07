@@ -9,7 +9,10 @@
         <Label Text="SandS Digital Recipe Book" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <Button Text="RecipeList" BackgroundColor="Blue" Clicked="Button_Clicked" />
+        <Button Text="RecipeList" BackgroundColor="Blue" Clicked="RecipeList_Button_Clicked" />
+        <Button Text="Shopping List" BackgroundColor="Blue" Clicked="ShoppingList_Button_Clicked" />
+        <Button Text="New Recipe" BackgroundColor="Blue" Clicked="NewRecipe_Button_Clicked" />
+        <Button Text="Ingredient List" BackgroundColor="Blue" Clicked="IngredientList_Button_Clicked" />
     </StackLayout>
 
 </ContentPage>
