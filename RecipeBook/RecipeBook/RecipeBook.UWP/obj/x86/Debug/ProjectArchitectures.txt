@@ -1,0 +1,1 @@
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.UWP\RecipeBook.UWP.csproj;x86

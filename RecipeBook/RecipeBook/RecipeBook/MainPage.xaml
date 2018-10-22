@@ -6,13 +6,23 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="SandS Digital Recipe Book" 
+        <Label Text="SandS Digital Recipe Book"
+           FontSize="40"
+           HorizontalTextAlignment="Center"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <Button Text="RecipeList" BackgroundColor="Blue" Clicked="RecipeList_Button_Clicked" />
-        <Button Text="Shopping List" BackgroundColor="Blue" Clicked="ShoppingList_Button_Clicked" />
-        <Button Text="New Recipe" BackgroundColor="Blue" Clicked="NewRecipe_Button_Clicked" />
-        <Button Text="Ingredient List" BackgroundColor="Blue" Clicked="IngredientList_Button_Clicked" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="RecipeList" BackgroundColor="Blue" Clicked="RecipeList_Button_Clicked" Grid.Row="0" Grid.Column="0" />
+            <Button Text="Shopping List" BackgroundColor="Blue" Clicked="ShoppingList_Button_Clicked" Grid.Row="0" Grid.Column="1"/>
+            <Button Text="New Recipe" BackgroundColor="Blue" Clicked="NewRecipe_Button_Clicked" Grid.Row="1" Grid.Column="0"/>
+            <Button Text="Ingredient List" BackgroundColor="Blue" Clicked="IngredientList_Button_Clicked" Grid.Row="1" Grid.Column="1"/>
+        </Grid>
     </StackLayout>
-
 </ContentPage>

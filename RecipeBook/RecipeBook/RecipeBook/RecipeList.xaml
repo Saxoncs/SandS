@@ -7,6 +7,13 @@
             <Label Text="Recipe List"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="RecipeView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding DisplayName}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <Button Text="Home Page" BackgroundColor="Blue" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
