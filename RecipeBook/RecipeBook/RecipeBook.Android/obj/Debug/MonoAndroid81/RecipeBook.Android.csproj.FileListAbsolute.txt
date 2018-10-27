@@ -99,9 +99,7 @@ C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\androi
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\SandS\RecipeBook\RecipeBook\RecipeBook\bin\Debug\netstandard2.0\RecipeBook.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\linksrc\RecipeBook.Android.pdb
-C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\bin\Debug\RecipeBook.dll.mdb
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\linksrc\RecipeBook.dll.mdb
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

@@ -45,11 +45,18 @@ namespace RecipeBook
         //Event handler for tapping a recipe in the list
         public async void RecipePageButton(object sender, EventArgs e)
         {
-            //MenuItem selection = (MenuItem)sender;
-            //string recipename = selection.Text;
+            MenuItem selection = (MenuItem)sender;
+            string recipename = selection.Text;
             //need to add something to the constructor that will signify to the program what recipe is being selected
-            //await Navigation.PushAsync(new RecipePage(recipename));
-            await Navigation.PushAsync(new RecipePage("read you loud and clear"));
+            try
+            {
+                await Navigation.PushAsync(new RecipePage(recipename));
+            }
+            catch
+            {
+                await Navigation.PushAsync(new RecipePage("read you loud and clear"));
+            }
+            
 
         }
 
