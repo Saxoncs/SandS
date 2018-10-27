@@ -12,6 +12,7 @@ namespace RecipeBook
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecipeList : ContentPage
     {
+        
         public RecipeList()
         {
             InitializeComponent();
@@ -38,6 +39,17 @@ namespace RecipeBook
         public class Recipe
         {
             public string DisplayName { get; set; }
+
+        }
+
+        //Event handler for tapping a recipe in the list
+        public async void RecipePageButton(object sender, EventArgs e)
+        {
+            //MenuItem selection = (MenuItem)sender;
+            //string recipename = selection.Text;
+            //need to add something to the constructor that will signify to the program what recipe is being selected
+            //await Navigation.PushAsync(new RecipePage(recipename));
+            await Navigation.PushAsync(new RecipePage("read you loud and clear"));
 
         }
 

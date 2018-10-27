@@ -4,13 +4,20 @@
              x:Class="RecipeBook.RecipeList">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Recipe List"
+            <Label x:Name="Heading" Text="Recipe List"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <ListView x:Name="RecipeView" SelectionMode="Single">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding DisplayName}" />
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="RecipePageButton" CommandParameter="{Binding .}" Text= "Open Recipe" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="15,0">
+                                <Label x:Name="lblRecipeName" Text="{Binding DisplayName}" />
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

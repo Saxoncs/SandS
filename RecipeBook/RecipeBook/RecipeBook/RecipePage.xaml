@@ -4,9 +4,7 @@
              x:Class="RecipeBook.RecipePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="RecipeTitle" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Text="didn't get nothin!" />
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -14,12 +12,12 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Label Text="Insert Ingredients Here" BackgroundColor="White" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
+                <Label x:Name="RecipeIngredients" Text="Insert Ingredients Here" BackgroundColor="White" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
                 <Image Source="ImageNotFound.png" Grid.Row="1" Grid.Column="0"/>
-                <Label Text="Insert Description Here" BackgroundColor="White" Grid.Row="1" Grid.Column="1"/>
-                <Label Text="Insert Instruction Here" BackgroundColor="White" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                <Label x:Name="RecipeDescription" Text="Insert Description Here" BackgroundColor="White" Grid.Row="1" Grid.Column="1"/>
+                <Label x:Name="RecipeDirections" Text="Insert Instruction Here" BackgroundColor="White" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
             </Grid>
-            <Button Text="Home Page" BackgroundColor="Blue" Clicked="Button_Clicked" />
+            <Button Text="Home Page" BackgroundColor="Blue" Clicked="Button_Clicked" VerticalOptions="End"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

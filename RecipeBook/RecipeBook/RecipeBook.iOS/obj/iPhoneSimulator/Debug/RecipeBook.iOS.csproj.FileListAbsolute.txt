@@ -43,7 +43,6 @@ C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\bin\iPhoneSimulator\Debug\zh-Hans\
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\bin\iPhoneSimulator\Debug\RecipeBook.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\bin\iPhoneSimulator\Debug\RecipeBook.pdb
-C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\bin\iPhoneSimulator\Debug\RecipeBook.dll.mdb
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
