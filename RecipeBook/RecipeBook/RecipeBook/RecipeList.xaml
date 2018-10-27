@@ -7,7 +7,7 @@
             <Label Text="Recipe List"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <ListView x:Name="RecipeView">
+            <ListView x:Name="RecipeView" SelectionMode="Single">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding DisplayName}" />

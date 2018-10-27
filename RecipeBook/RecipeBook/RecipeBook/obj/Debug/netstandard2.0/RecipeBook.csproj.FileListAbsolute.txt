@@ -14,3 +14,4 @@ C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipeList.xa
 C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\ShoppingList.xaml.g.cs
 C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\NewRecipe.xaml.g.cs
 C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\IngredientList.xaml.g.cs
+C:\SandS\RecipeBook\RecipeBook\RecipeBook\obj\Debug\netstandard2.0\RecipePage.xaml.g.cs
