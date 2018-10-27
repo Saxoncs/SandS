@@ -12,7 +12,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                <MenuItem Clicked="RecipePageButton" CommandParameter="{Binding .}" Text= "Open Recipe" />
+                                <MenuItem  Clicked="RecipePageButton" CommandParameter="{Binding .}" Text= "Open Recipe" />
                             </ViewCell.ContextActions>
                             <StackLayout Padding="15,0">
                                 <Label x:Name="lblRecipeName" Text="{Binding DisplayName}" />

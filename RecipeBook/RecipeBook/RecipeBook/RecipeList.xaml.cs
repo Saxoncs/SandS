@@ -13,6 +13,10 @@ namespace RecipeBook
     public partial class RecipeList : ContentPage
     {
         
+
+        //Observable Collection creates a list out of objects in the rexipe class that can be updated on the fly
+        ObservableCollection<RecipeClass> recipes = new ObservableCollection<RecipeClass>();
+
         public RecipeList()
         {
             InitializeComponent();
@@ -21,9 +25,11 @@ namespace RecipeBook
             //Links the listview in XAML to an item source
             RecipeView.ItemsSource = recipes;
 
-            //Add some dummy data to display will be replaced by a call the file reading method for getting the name
-            recipes.Add(new Recipe { DisplayName = "Burrito Bowl" });
-            recipes.Add(new Recipe { DisplayName = "Spicy Wings" });
+            //add some dummy recipe data until the file reading system is complete
+           
+            recipes.Add(new RecipeClass { DisplayName = "Burrito Bowl", RecipeID = 0 });
+            recipes.Add(new RecipeClass { DisplayName = "Spicy Wings", RecipeID = 1 });
+
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
@@ -32,15 +38,8 @@ namespace RecipeBook
         }
         
         
-        //Observable Collection creates a list of recipe names for the menus that can be updated on the fly
-        ObservableCollection<Recipe> recipes = new ObservableCollection<Recipe>();
 
-        //Recipe class
-        public class Recipe
-        {
-            public string DisplayName { get; set; }
 
-        }
 
         //Event handler for tapping a recipe in the list
         public async void RecipePageButton(object sender, EventArgs e)

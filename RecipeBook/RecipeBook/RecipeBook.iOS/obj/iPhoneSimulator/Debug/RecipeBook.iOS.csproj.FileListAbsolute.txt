@@ -55,3 +55,4 @@ C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\obj\iPhoneSimulator\Debug\XamlC.st
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\obj\iPhoneSimulator\Debug\RecipeBook.iOS.csproj.CopyComplete
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\obj\iPhoneSimulator\Debug\RecipeBook.iOS.exe
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\obj\iPhoneSimulator\Debug\RecipeBook.iOS.pdb
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.iOS\bin\iPhoneSimulator\Debug\RecipeBook.dll.mdb
