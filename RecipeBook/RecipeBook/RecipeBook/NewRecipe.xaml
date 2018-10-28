@@ -4,10 +4,25 @@
              x:Class="RecipeBook.NewRecipe">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="New Recipe"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Home Page" BackgroundColor="Blue" Clicked="Button_Clicked" />
+            <Editor x:Name="RecipeTitle" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Text="So what do we call you?" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="135" />
+                    <RowDefinition Height="135" />
+                    <RowDefinition Height="135" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Editor x:Name="RecipeIngredients" Text="Insert Ingredients Here" BackgroundColor="White" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
+                <Image Source="imagenotfound.jpg" Aspect="AspectFill" Grid.Row="0" Grid.Column="1"/>
+                <Editor x:Name="RecipeDescription" Text="Insert Description Here" BackgroundColor="White" Grid.Row="1" Grid.Column="1"/>
+                <Editor x:Name="RecipeDirections" Text="Insert Instruction Here" BackgroundColor="White" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                <Button x:Name="btnSave" Text="Save" BackgroundColor="Blue" Clicked="btnSave_Clicked" Grid.Row="3" Grid.Column="1"/>
+                <Button x:Name="btnCancel" Text="Cancel" BackgroundColor="Blue" Clicked="BtnCancel_Clicked" Grid.Row="3" Grid.Column="0" />
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

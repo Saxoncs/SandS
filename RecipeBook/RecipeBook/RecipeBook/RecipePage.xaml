@@ -7,9 +7,10 @@
             <Label x:Name="RecipeTitle" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Text="didn't get nothin!" />
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="140" />
-                    <RowDefinition Height="140" />
-                    <RowDefinition Height="140" />
+                    <RowDefinition Height="135" />
+                    <RowDefinition Height="135" />
+                    <RowDefinition Height="135" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -18,8 +19,10 @@
                 <Image Source="imagenotfound.jpg" Aspect="AspectFill" Grid.Row="0" Grid.Column="1"/>
                 <Label x:Name="RecipeDescription" Text="Insert Description Here" BackgroundColor="White" Grid.Row="1" Grid.Column="1"/>
                 <Label x:Name="RecipeDirections" Text="Insert Instruction Here" BackgroundColor="White" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                <Button x:Name="btnEdit" Text="Edit" BackgroundColor="Blue" Grid.Row="3" Grid.Column="1"/>
+                <Button x:Name="btnHomePage" Text="Home Page" BackgroundColor="Blue" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="0" />
             </Grid>
-            <Button Text="Home Page" BackgroundColor="Blue" Clicked="Button_Clicked" VerticalOptions="End"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
