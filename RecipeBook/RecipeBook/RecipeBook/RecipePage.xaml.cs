@@ -16,19 +16,17 @@ namespace RecipeBook
     {
         
         
-        //Ideally something will be fed into the constructor and the rest of the stuff can be built from there
         public RecipePage(int recipeID)
         {
+
             InitializeComponent();
             ObservableCollection<RecipeClass> recipes = RecipeClassController.PopulateRecipes();
-
 
             for (int i = 0; i < recipes.Count; i++)
             {
                 if (recipeID == recipes[i].RecipeID)
                 {
-             
-                    RecipeTitle.Text = recipes[i].DisplayName;
+                    this.Title = recipes[i].DisplayName;
                     RecipeIngredients.Text = recipes[i].Ingredients;
                     RecipeDescription.Text = recipes[i].Description;
                     RecipeDirections.Text = recipes[i].Instructions;
@@ -36,17 +34,28 @@ namespace RecipeBook
                 }
             }
 
-            
-     
-
         }
 
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void BtnHomePage_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
-      
+
+        private async void btnEdit_Clicked(object sender, EventArgs e)
+        {
+            ObservableCollection<RecipeClass> recipes = RecipeClassController.PopulateRecipes();
+
+            for (int i = 0; i < recipes.Count; i++)
+            {
+                if (this.Title == recipes[i].DisplayName)
+                {
+                    int recipeID = recipes[i].RecipeID;
+                    await Navigation.PushAsync(new NewRecipe(recipeID));
+                }
+            }
+  
+        }
     }
    
 }

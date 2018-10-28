@@ -15,6 +15,7 @@ namespace RecipeBook
 		public IngredientList ()
 		{
 			InitializeComponent ();
+            this.Title = "Ingredient List";
 		}
 
         private async void Button_Clicked(object sender, EventArgs e)

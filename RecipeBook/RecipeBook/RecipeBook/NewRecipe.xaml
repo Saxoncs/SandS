@@ -4,7 +4,7 @@
              x:Class="RecipeBook.NewRecipe">
     <ContentPage.Content>
         <StackLayout>
-            <Editor x:Name="RecipeTitle" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Text="So what do we call you?" />
+            <Editor x:Name="RecipeTitle" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Text="Insert Recipe Title Here" />
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="135" />
@@ -20,7 +20,7 @@
                 <Editor x:Name="RecipeDescription" Text="Insert Description Here" BackgroundColor="White" Grid.Row="1" Grid.Column="1"/>
                 <Editor x:Name="RecipeDirections" Text="Insert Instruction Here" BackgroundColor="White" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
                 <Button x:Name="btnSave" Text="Save" BackgroundColor="Blue" Clicked="btnSave_Clicked" Grid.Row="3" Grid.Column="1"/>
-                <Button x:Name="btnCancel" Text="Cancel" BackgroundColor="Blue" Clicked="BtnCancel_Clicked" Grid.Row="3" Grid.Column="0" />
+                <Button x:Name="btnCancel" Text="Cancel" BackgroundColor="Blue" Clicked="btnCancel_Clicked" Grid.Row="3" Grid.Column="0" />
             </Grid>
 
         </StackLayout>

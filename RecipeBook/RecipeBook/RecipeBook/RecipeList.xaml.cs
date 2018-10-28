@@ -12,24 +12,25 @@ namespace RecipeBook
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecipeList : ContentPage
     {
+        //======================
+        //Reference A2: personal assistance
+        //Purpose: Assist in the creation of a list view with context sensitive tap events and menu items
+        //Date: 27th October 2018
+        //Source: Microsoft Xamarin documentation
+        //Assistance: Example code writing an interactive listview
+        //======================
 
         //Observable Collection creates a list out of objects in the rexipe class that can be updated on the fly
-        //ObservableCollection<RecipeClass> recipes = new ObservableCollection<RecipeClass>();
         ObservableCollection<RecipeClass> recipes = RecipeClassController.PopulateRecipes();
-
 
         public RecipeList()
         {
             InitializeComponent();
 
+            this.Title = "My Recipes";
             
-            //Links the listview in XAML to an item source
+            //Links the listview in XAML to our ObservableCollection source
             RecipeView.ItemsSource = recipes;
-
-            //add some dummy recipe data until the file reading system is complete
-           
-            //recipes.Add(new RecipeClass { DisplayName = "Burrito Bowl", RecipeID = 0 });
-            //recipes.Add(new RecipeClass { DisplayName = "Spicy Wings", RecipeID = 1 });
 
         }
 
@@ -38,34 +39,57 @@ namespace RecipeBook
             await Navigation.PushAsync(new MainPage());
         }
         
+
         
-
-
-
-        //Event handler for tapping a recipe in the list
-        public async void RecipePageButton(object sender, EventArgs e)
-        {
+        public async void miEditRecipe_Clicked(object sender, EventArgs e)
+        {   
+            //Event handler for the 'Edit' Menu item
             var mi = ((MenuItem)sender);
             int recipenumber = (int)mi.CommandParameter;
-            //need to add something to the constructor that will signify to the program what recipe is being selected
-            try
+
+            //need to add the recipeID to the constructor to signify which recipe is being selected
             {
-                await Navigation.PushAsync(new RecipePage(recipenumber));
+                await Navigation.PushAsync(new NewRecipe(recipenumber));
             }
-            catch
+        }
+
+        private async void RecipeView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            //Event handler for the tapping of a menu item tgr is short for tapgesturerecognizer
+            //commandparameter can't be used by tap event handlers so a new solution was required
+            //this was acheived by taking the text from the label itself and using that to find the recipenID needed to get to the RecipePage
+            var tgr = ((Label)sender);
+            string recipename = tgr.Text;
+            for (int i = 0; i < recipes.Count; i++)
             {
-                await Navigation.PushAsync(new RecipePage(0));
+                if (recipename == recipes[i].DisplayName)
+                {
+                   int recipenumber = recipes[i].RecipeID;
+                   await Navigation.PushAsync(new RecipePage(recipenumber));
+                }
             }
-            
+ 
 
         }
 
+        private async void miDeleteRecipe_Clicked(object sender, EventArgs e)
+        {
+            //Event handler for the delete menu item
+            var mi = ((MenuItem)sender);
+            //Create an observablecollection from the RecipeClass table
+            ObservableCollection<RecipeClass> recipes = RecipeClassController.PopulateRecipes();
 
-
-
-
-
-
+            //for loop is used to search the observable collection for the matching recipeID
+            for (int i = 0; i < recipes.Count; i++)
+            {
+                if ((int)mi.CommandParameter == recipes[i].RecipeID)
+                {
+                    var rowcount = RecipeClassController.FindRecipeDatabase().Delete<RecipeClass>(recipes[i].RecipeID);
+                    //the page needs to be refreshed in order for the changes to be visible
+                    await Navigation.PushAsync(new RecipeList());
+                }
+            }
+        }
     }
 
 

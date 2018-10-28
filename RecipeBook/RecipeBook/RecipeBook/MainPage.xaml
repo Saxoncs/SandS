@@ -5,12 +5,6 @@
              x:Class="RecipeBook.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="SandS Digital Recipe Book"
-           FontSize="40"
-           HorizontalTextAlignment="Center"
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="200" />

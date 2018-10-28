@@ -12,8 +12,11 @@ namespace RecipeBook
         public MainPage()
         {
             InitializeComponent();
+            this.Title = "SandS Digital Recipe Book";
         }
 
+
+        //Button event handlers
         private async void RecipeList_Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RecipeList());

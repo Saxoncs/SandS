@@ -4,9 +4,6 @@
              x:Class="RecipeBook.IngredientList">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Ingredient List"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
             <Button Text="Home Page" BackgroundColor="Blue" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>

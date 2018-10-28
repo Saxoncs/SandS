@@ -12,6 +12,8 @@ namespace RecipeBook
         {
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage());
+
+            //Fetch the database on startup to get its creation out of the way
             RecipeClassController.FindRecipeDatabase();
         }
 
