@@ -18,7 +18,7 @@ namespace RecipeBook
         
         public RecipePage(int recipeID)
         {
-
+            //Constructor receives a recipeID and from there fetches the associated recipe and displays relevant information
             InitializeComponent();
             ObservableCollection<RecipeClass> recipes = RecipeClassController.PopulateRecipes();
 
@@ -42,8 +42,11 @@ namespace RecipeBook
             await Navigation.PushAsync(new MainPage());
         }
 
+
         private async void btnEdit_Clicked(object sender, EventArgs e)
         {
+            //This code was copied from elsewhere in the program, but having a way to enter the editor from a
+            //specific recipe page seemed like a good UI decision
             ObservableCollection<RecipeClass> recipes = RecipeClassController.PopulateRecipes();
 
             for (int i = 0; i < recipes.Count; i++)
