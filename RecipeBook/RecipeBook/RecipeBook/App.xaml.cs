@@ -12,6 +12,7 @@ namespace RecipeBook
         {
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage());
+            RecipeClassController.FindRecipeDatabase();
         }
 
         protected override void OnStart()
@@ -28,6 +29,7 @@ namespace RecipeBook
         {
             // Handle when your app resumes
         }
+
     }
 
 }

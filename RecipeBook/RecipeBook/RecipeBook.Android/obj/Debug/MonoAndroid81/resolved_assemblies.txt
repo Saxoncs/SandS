@@ -4,6 +4,12 @@ C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\androi
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Android.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\mscorlib.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\RecipeBook.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\SQLite-net.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.batteries_green.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.batteries_v2.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.core.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Core.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.dll
@@ -63,4 +69,6 @@ C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\androi
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Security.SecureString.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Web.Services.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.XPath.XDocument.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Threading.Tasks.dll
+C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\System.Globalization.dll
 C:\SandS\RecipeBook\RecipeBook\RecipeBook.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Security.dll
